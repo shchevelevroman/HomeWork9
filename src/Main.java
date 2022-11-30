@@ -72,5 +72,21 @@ public class Main {
                 System.out.println(number3[i]);
             }
         }
+        //Task#4
+        System.out.println("Task#4");
+        int[] numbers4;
+        numbers4 = new int[3];
+        numbers4[0] = -1;
+        numbers4[1] = 2;
+        numbers4[2] = 3;
+        for (int i = 0; i < numbers4.length; i++) {
+            if ( numbers4[i] % 2 == 0) {
+                if (i == numbers4.length - 1) {
+                    System.out.println(numbers4[i]);
+                } else {
+                    System.out.print(numbers4[i] + ", ");
+                }
+            }
+        }
     }
 }
