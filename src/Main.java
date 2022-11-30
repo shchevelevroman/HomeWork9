@@ -5,7 +5,7 @@ public class Main {
         System.out.println("Task#1-2");
         int[] numbers;
         numbers = new int[3];
-        numbers[0] = -1;
+        numbers[0] = 1;
         numbers[1] = 2;
         numbers[2] = 3;
         for (int i = 0; i < numbers.length; i++) {
@@ -18,7 +18,7 @@ public class Main {
 
         double[] numbers2;
         numbers2 = new double[3];
-        numbers2[0] = -1.57;
+        numbers2[0] = 1.57;
         numbers2[1] = 7.654;
         numbers2[2] = 9.986;
         for (int i = 0; i < numbers2.length; i++) {
@@ -41,11 +41,11 @@ public class Main {
         System.out.println("Task#3");
         int[] number;
         number = new int[3];
-        number[0] = -1;
+        number[0] = 1;
         number[1] = 2;
         number[2] = 3;
         for (int i = number.length - 1; i >= 0; i--) {
-            if (i != 0){
+            if (i != 0) {
                 System.out.print(number[i] + ", ");
             } else {
                 System.out.println(number[i]);
@@ -53,10 +53,10 @@ public class Main {
         }
         double[] number2;
         number2 = new double[3];
-        number2[0] = -1.57;
+        number2[0] = 1.57;
         number2[1] = 7.654;
         number2[2] = 9.986;
-        for (int i = number2.length -1; i >= 0; i--) {
+        for (int i = number2.length - 1; i >= 0; i--) {
             if (i != 0) {
                 System.out.print(number2[i] + ", ");
             } else {
@@ -76,11 +76,19 @@ public class Main {
         System.out.println("Task#4");
         int[] numbers4;
         numbers4 = new int[3];
-        numbers4[0] = -1;
+        numbers4[0] = 1;
         numbers4[1] = 2;
         numbers4[2] = 3;
         for (int i = 0; i < numbers4.length; i++) {
-            if ( numbers4[i] % 2 == 0) {
+            if (numbers4[i] % 2 != 0) {
+                numbers4[i] += 1;{
+                    if (i == numbers4.length - 1) {
+                        System.out.println(numbers4[i]);
+                    } else {
+                        System.out.print(numbers4[i] + ", ");
+                    }
+                }
+            } else {
                 if (i == numbers4.length - 1) {
                     System.out.println(numbers4[i]);
                 } else {
